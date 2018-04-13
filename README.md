@@ -1,6 +1,6 @@
 # MovieRating
 
-App for rating movies *and* actors!
+I'm building a App that rate movies and actors. A User can rate movies and actors. A single movie has multiple actors
 
 ---
 
