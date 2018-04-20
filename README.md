@@ -1,5 +1,7 @@
 # Rumbl
 
+A app that rate movies and actors. A User can rate movies and actors. A single movie has multiple actors. I made this app using Elixir.
+
 To start your Phoenix app:
 
   * Install dependencies with `mix deps.get`
