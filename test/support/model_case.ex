@@ -1,4 +1,4 @@
-defmodule MovieRating.ModelCase do
+defmodule Rumbl.ModelCase do
   @moduledoc """
   This module defines the test case to be used by
   model tests.
@@ -16,20 +16,20 @@ defmodule MovieRating.ModelCase do
 
   using do
     quote do
-      alias MovieRating.Repo
+      alias Rumbl.Repo
 
       import Ecto
       import Ecto.Changeset
       import Ecto.Query
-      import MovieRating.ModelCase
+      import Rumbl.ModelCase
     end
   end
 
   setup tags do
-    :ok = Ecto.Adapters.SQL.Sandbox.checkout(MovieRating.Repo)
+    :ok = Ecto.Adapters.SQL.Sandbox.checkout(Rumbl.Repo)
 
     unless tags[:async] do
-      Ecto.Adapters.SQL.Sandbox.mode(MovieRating.Repo, {:shared, self()})
+      Ecto.Adapters.SQL.Sandbox.mode(Rumbl.Repo, {:shared, self()})
     end
 
     :ok
@@ -49,17 +49,10 @@ defmodule MovieRating.ModelCase do
   You could then write your assertion like:
 
       assert {:password, "is unsafe"} in errors_on(%User{}, %{password: "password"})
-
-  You can also create the changeset manually and retrieve the errors
-  field directly:
-
-      iex> changeset = User.changeset(%User{}, password: "password")
-      iex> {:password, "is unsafe"} in changeset.errors
-      true
   """
   def errors_on(struct, data) do
     struct.__struct__.changeset(struct, data)
-    |> Ecto.Changeset.traverse_errors(&MovieRating.ErrorHelpers.translate_error/1)
+    |> Ecto.Changeset.traverse_errors(&Rumbl.ErrorHelpers.translate_error/1)
     |> Enum.flat_map(fn {key, errors} -> for msg <- errors, do: {key, msg} end)
   end
 end

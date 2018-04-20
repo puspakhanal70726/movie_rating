@@ -1,4 +1,4 @@
-defmodule MovieRating.ErrorHelpers do
+defmodule Rumbl.ErrorHelpers do
   @moduledoc """
   Conveniences for translating and building error messages.
   """
@@ -9,9 +9,9 @@ defmodule MovieRating.ErrorHelpers do
   Generates tag for inlined form input errors.
   """
   def error_tag(form, field) do
-    if error = form.errors[field] do
+    Enum.map(Keyword.get_values(form.errors, field), fn (error) ->
       content_tag :span, translate_error(error), class: "help-block"
-    end
+    end)
   end
 
   @doc """
@@ -32,9 +32,9 @@ defmodule MovieRating.ErrorHelpers do
     #     dgettext "errors", "is invalid"
     #
     if count = opts[:count] do
-      Gettext.dngettext(MovieRating.Gettext, "errors", msg, msg, count, opts)
+      Gettext.dngettext(Rumbl.Gettext, "errors", msg, msg, count, opts)
     else
-      Gettext.dgettext(MovieRating.Gettext, "errors", msg, opts)
+      Gettext.dgettext(Rumbl.Gettext, "errors", msg, opts)
     end
   end
 end

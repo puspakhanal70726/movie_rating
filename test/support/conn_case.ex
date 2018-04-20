@@ -1,4 +1,4 @@
-defmodule MovieRating.ConnCase do
+defmodule Rumbl.ConnCase do
   @moduledoc """
   This module defines the test case to be used by
   tests that require setting up a connection.
@@ -20,23 +20,23 @@ defmodule MovieRating.ConnCase do
       # Import conveniences for testing with connections
       use Phoenix.ConnTest
 
-      alias MovieRating.Repo
+      alias Rumbl.Repo
       import Ecto
       import Ecto.Changeset
       import Ecto.Query
 
-      import MovieRating.Router.Helpers
+      import Rumbl.Router.Helpers
 
       # The default endpoint for testing
-      @endpoint MovieRating.Endpoint
+      @endpoint Rumbl.Endpoint
     end
   end
 
   setup tags do
-    :ok = Ecto.Adapters.SQL.Sandbox.checkout(MovieRating.Repo)
+    :ok = Ecto.Adapters.SQL.Sandbox.checkout(Rumbl.Repo)
 
     unless tags[:async] do
-      Ecto.Adapters.SQL.Sandbox.mode(MovieRating.Repo, {:shared, self()})
+      Ecto.Adapters.SQL.Sandbox.mode(Rumbl.Repo, {:shared, self()})
     end
 
     {:ok, conn: Phoenix.ConnTest.build_conn()}

@@ -1,3 +1,3 @@
-defmodule MovieRating.LayoutViewTest do
-  use MovieRating.ConnCase, async: true
+defmodule Rumbl.LayoutViewTest do
+  use Rumbl.ConnCase, async: true
 end

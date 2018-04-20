@@ -1,5 +1,5 @@
-defmodule MovieRating.PageControllerTest do
-  use MovieRating.ConnCase
+defmodule Rumbl.PageControllerTest do
+  use Rumbl.ConnCase
 
   test "GET /", %{conn: conn} do
     conn = get conn, "/"

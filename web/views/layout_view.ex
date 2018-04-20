@@ -1,3 +1,3 @@
-defmodule MovieRating.LayoutView do
-  use MovieRating.Web, :view
+defmodule Rumbl.LayoutView do
+  use Rumbl.Web, :view
 end

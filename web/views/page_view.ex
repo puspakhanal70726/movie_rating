@@ -1,3 +1,3 @@
-defmodule MovieRating.PageView do
-  use MovieRating.Web, :view
+defmodule Rumbl.PageView do
+  use Rumbl.Web, :view
 end

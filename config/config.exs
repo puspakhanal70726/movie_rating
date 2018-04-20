@@ -6,15 +6,15 @@
 use Mix.Config
 
 # General application configuration
-config :movie_rating,
-  ecto_repos: [MovieRating.Repo]
+config :rumbl,
+  ecto_repos: [Rumbl.Repo]
 
 # Configures the endpoint
-config :movie_rating, MovieRating.Endpoint,
+config :rumbl, Rumbl.Endpoint,
   url: [host: "localhost"],
-  secret_key_base: "GT9eWqeZbxf9MrNNuqr9r1c9nqWK+mLNhMI/0yajkfBpjnQ5zN1HaD2lCAfG8xNA",
-  render_errors: [view: MovieRating.ErrorView, accepts: ~w(html json)],
-  pubsub: [name: MovieRating.PubSub,
+  secret_key_base: "bj+KW7FxMUUTO7y6GatYwYYAQfcbXyd/4IqNKiPcP4SwDySBnr6I9MpLJcYpkUQ7",
+  render_errors: [view: Rumbl.ErrorView, accepts: ~w(html json)],
+  pubsub: [name: Rumbl.PubSub,
            adapter: Phoenix.PubSub.PG2]
 
 # Configures Elixir's Logger
