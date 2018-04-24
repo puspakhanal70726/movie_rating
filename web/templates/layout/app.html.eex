@@ -1,54 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <title>Hello Rumbl!</title>
-    <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
-  </head>
+  <title>RATINGS</title>
+  <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+</head>
 
-  <body>
-    <div class="container">
-      <div class="header">
-        <ol class="breadcrumb text-right">
-          <%= if @current_user do %>
-          <li>
-            <%= @current_user.username %>
-          </li>
-          <li>
-            <%= link "Log out", to: session_path(@conn, :delete, @current_user), method: "delete" %>
-          </li>
-          <li class="dropdown">
-            <button class="dropbtn">Ratings</button>
-            <div class="dropdown-content">
-               <a href="#">Actor-Ratings</a>
-              <a href="#">Movie-Ratings</a>
-            </div>
-          </li>
-          <% else %>
-          <li>
+<body>
+  <div class = "subbody">
+    <div class = "nextpage">
+      <ol>
+        <%= if @current_user do %>
+        <li>
+          <%= @current_user.username %>
+        </li>
+        <li>
+          <%= link "Log out", to: session_path(@conn, :delete, @current_user), method: "delete" %>
+        </li>
+        <% else %>
+        <li>
           <%= link "Register", to: user_path(@conn, :new) %>
-          </li>
-          <li>
-            <%= link "Log in", to: session_path(@conn, :new) %>
-          </li>
-          <% end %>
-        </ol>
-      <span class="logo"></span>
+        </li>
+        <li>
+          <%= link "Log in", to: session_path(@conn, :new) %>
+        </li>
+        <% end %>
+      </ol>
+      <div class = "picture">
+
+      </div>
     </div>
 
-      <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
-      <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
+    <div class = "mycontent">
+      <p class="alert alert-info" role="message"><%= get_flash(@conn, :info) %></p>
+      <p class="alert alert-danger" role="message"><%= get_flash(@conn, :error) %></p>
 
-      <main role="main">
-        <%= render @view_module, @view_template, assigns %>
-      </main>
+      <div class = "mysecondcontent">
+        <main role="main">
+          <%= render @view_module, @view_template, assigns %>
+        </main>
+      </div>
+    </div>
+  </div>
 
-    </div> <!-- /container -->
-    <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
-  </body>
+  <footer class = "footer">
+    <p>Puspa khanal</p>
+  </footer>
+
+  <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
+</body>
 </html>

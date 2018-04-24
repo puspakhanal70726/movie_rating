@@ -1,1 +1,108 @@
-/* This file is for your main application css. */
+body{
+}
+
+.subbody{
+
+  min-height: 600px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.nextpage{
+
+  width: 12%;
+
+
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.nextpage ol{
+
+}
+
+.nextpage li, a{
+  font-size: 20px;
+  text-decoration: none;
+
+  text-align: center;
+  padding-bottom: 16px;
+}
+
+.mycontent{
+
+  background-image: url("/images/hero.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+footer{
+  padding-top: 20px;
+  text-align: center;
+}
+
+.message{
+  background-color: #f7f7f7;
+  font-size: 20px;
+  margin: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.mysecondcontent{
+
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 10px;
+  text-align: center;
+  padding: 30px;
+  min-height: 600px;
+  position: relative;
+  top: 100px;
+  opacity: .9;
+}
+
+.form-group{
+  margin: 0 auto;
+  padding: 20px 20px 20px 20px
+}
+.form-group input{
+  width: 300px;
+}
+.form-group span{
+  padding: 6px;
+  display: block;
+  color: green;
+  font-size: 10px;
+}
+
+.btn{
+  margin-top: 10px;
+  width: 300px;
+}
+
+.table{
+  text-align: left;
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+.table td{
+  padding: 7px 20px 7px;
+}
+.table a{
+  font-size: 12px;
+}
+
+.users h1{
+  font-size: 22px;
+  padding-bottom: 10px;
+}
+
+.picture{
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+.picture img{
+  height: 80px;
+  width: auto;
+}
