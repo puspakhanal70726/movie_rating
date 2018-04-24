@@ -9,7 +9,7 @@
 
   <title>RATINGS</title>
   <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 </head>
 
 <body>
@@ -23,6 +23,7 @@
         <li>
           <%= link "Log out", to: session_path(@conn, :delete, @current_user), method: "delete" %>
         </li>
+        
         <% else %>
         <li>
           <%= link "Register", to: user_path(@conn, :new) %>
