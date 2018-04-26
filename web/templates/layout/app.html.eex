@@ -1,41 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-  <title>RATINGS</title>
-  <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-</head>
+    <title>RATINGS</title>
+    <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
+  </head>
 
-<body>
-  <div class = "subbody">
-    <div class = "nextpage">
-      <ol>
-        <%= if @current_user do %>
-        <li>
-          <%= @current_user.username %>
-        </li>
-        <li>
-          <%= link "Log out", to: session_path(@conn, :delete, @current_user), method: "delete" %>
-        </li>
-        
-        <% else %>
-        <li>
+  <body>
+    <div class="container">
+      <div class="header">
+        <ol class="breadcrumb text-right">
+          <%= if @current_user do %>
+          <li>
+            <%= @current_user.username %>
+          </li>
+          <li>
+            <%= link "Log out", to: session_path(@conn, :delete, @current_user), method: "delete" %>
+          </li>
+          <% else %>
+          <li>
           <%= link "Register", to: user_path(@conn, :new) %>
-        </li>
-        <li>
-          <%= link "Log in", to: session_path(@conn, :new) %>
-        </li>
-        <% end %>
-      </ol>
-      <div class = "picture">
-
-      </div>
+          </li>
+          <li>
+            <%= link "Log in", to: session_path(@conn, :new) %>
+          </li>
+          <% end %>
+        </ol>
+        <p class="text">Welcome to Ratings App</p>
     </div>
 
     <div class = "mycontent">
@@ -48,12 +44,11 @@
         </main>
       </div>
     </div>
-  </div>
+    <footer class = "footer">
+      <p>Puspa khanal</p>
+    </footer>
 
-  <footer class = "footer">
-    <p>Puspa khanal</p>
-  </footer>
 
-  <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
-</body>
+    <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
+  </body>
 </html>
