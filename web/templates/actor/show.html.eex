@@ -1,0 +1,13 @@
+<h2>Show actor</h2>
+
+<ul>
+
+  <li>
+    <strong>User:</strong>
+    <%= @actor.user_id %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: actor_path(@conn, :edit, @actor) %></span>
+<span><%= link "Back", to: actor_path(@conn, :index) %></span>
