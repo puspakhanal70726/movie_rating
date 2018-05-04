@@ -1,26 +1,3 @@
-<h2>Listing movie</h2>
-
-<table class="table">
-  <thead>
-    <tr>
-      <th>User</th>
-
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-<%= for movie <- @movie do %>
-    <tr>
-      <td><%= movie.user_id %></td>
-
-      <td class="text-right">
-        <span><%= link "Show", to: movie_path(@conn, :show, movie), class: "btn btn-default btn-xs" %></span>
-        <span><%= link "Edit", to: movie_path(@conn, :edit, movie), class: "btn btn-default btn-xs" %></span>
-        <span><%= link "Delete", to: movie_path(@conn, :delete, movie), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %></span>
-      </td>
-    </tr>
-<% end %>
-  </tbody>
-</table>
+<h1>Movie Rating</h1>
 
 <span><%= link "New movie", to: movie_path(@conn, :new) %></span>

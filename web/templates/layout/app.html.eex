@@ -32,9 +32,15 @@
           <% end %>
         </ol>
         <p class="text">Welcome to Ratings App</p>
-    </div>
-
-    <div class = "mycontent">
+        <div class="dropdown">
+          <button class="dropbtn">Menu</button>
+          <div class="dropdown-content">
+            <%= link "New actor", to: actor_path(@conn, :index) %>
+            <%= link "New movie", to: movie_path(@conn, :index) %>
+          </div>
+        </div>
+      </div>
+      <div class = "mycontent">
       <p class="alert alert-info" role="message"><%= get_flash(@conn, :info) %></p>
       <p class="alert alert-danger" role="message"><%= get_flash(@conn, :error) %></p>
 
@@ -51,4 +57,4 @@
 
     <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
   </body>
-</html>
+  </html>
