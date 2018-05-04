@@ -40,7 +40,6 @@
           </div>
         </div>
       </div>
-      <div class = "mycontent">
       <p class="alert alert-info" role="message"><%= get_flash(@conn, :info) %></p>
       <p class="alert alert-danger" role="message"><%= get_flash(@conn, :error) %></p>
 
@@ -50,9 +49,6 @@
         </main>
       </div>
     </div>
-    <footer class = "footer">
-      <p>Puspa khanal</p>
-    </footer>
 
 
     <script src="<%= static_path(@conn, "/js/app.js") %>"></script>

@@ -1,3 +1,1 @@
-<h1>Movie Rating</h1>
 
-<span><%= link "New movie", to: movie_path(@conn, :new) %></span>

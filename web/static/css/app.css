@@ -7,18 +7,12 @@ body{
   min-height: 600px;
   font-family: 'Roboto', sans-serif;
 }
-.mycontent{
 
-  background-image: url("/images/hero3.jpg");
-  background-position: top;
-  background-repeat: no-repeat;
-  height: 600px;
-  width: 400px;
-}
 .fonts{
   width: 300px;
   margin-left: 200px;
-background-image: url("/images/hero.jpg");
+
+z-index: 100;
 }
 
 /* Phoenix flash messages */
@@ -87,23 +81,20 @@ background-image: url("/images/hero.jpg");
   color: white;
   width: 300px;
   margin-left: 200px;
-}
-.mycontent{
-  background-image: url("/images/hero3.jpg");
-  background-position: top;
-  background-repeat: no-repeat;
-  width: 1000px;
-  height: 900px;
 
 }
+
 .secondpicture{
-  background-image: url("/images/hero.jpg");
+
   background-position: top;
   background-repeat: no-repeat;
+  z-index: 100;
 }
 .login{
   margin-left: 200px;
   color: white;
+  z-index: 100;
+
 }
 .footer{
   font-size: 30px;
@@ -162,6 +153,8 @@ background-image: url("/images/hero.jpg");
 .dropdown:hover .dropbtn {
     background-color: #3e8e41;
 }
+
+
 
 
 

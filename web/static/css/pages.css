@@ -1,0 +1,15 @@
+.mycontent{
+  background-position: top;
+  background-repeat: no-repeat;
+  height: 600px;
+  width: 400px;
+}
+.mycontent{
+  background-image: url("/images/hero3.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+
+  width: 1000px;
+  height: 900px;
+
+}
