@@ -1,10 +1,10 @@
 <div class="flex-container">
   <p class="name">Hugh</p>
-<div class="firstimage"></div>
-<p class="name">Henry</p>
-<div class="secondimage"></div>
-<p class="name">Benedict</p>
-<div class="thridimage"></div>
+  <div class="firstimage"></div>
+  <p class="name">Henry</p>
+  <div class="secondimage"></div>
+  <p class="name">Benedict</p>
+  <div class="thridimage"></div>
 </div>
 
 <div class="flex-container">
