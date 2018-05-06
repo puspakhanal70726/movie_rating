@@ -13,3 +13,54 @@
   height: 900px;
 
 }
+
+.flex-container {
+  display: flex;
+
+
+
+}
+
+.flex-container > div {
+  margin: 25px;
+  padding: 160px;
+
+}
+.secondimage{
+  background-image: url("/images/hero5.jpg");
+  background-repeat: no-repeat;
+}
+
+.firstimage{
+background-image: url("/images/hughjackman.jpg");
+background-repeat: no-repeat;
+
+}
+
+.thridimage{
+  background-image: black;
+  background-image: url("/images/hero4.jpg");
+
+  background-repeat: no-repeat;
+}
+
+.fourthimage{
+background-image: url("/images/tomhanks.jpg");
+background-repeat: no-repeat;
+
+}
+
+.fifthimage{
+  background-image: url("/images/danielradcliffe.jpg");
+  background-repeat: no-repeat;
+}
+
+
+.siximage{
+  background-image: url("/images/sylvestarstallone.jpg");
+  background-repeat: no-repeat;
+
+}
+.name{
+  font-size: 15px;
+}

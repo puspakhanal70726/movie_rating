@@ -35,8 +35,9 @@
         <div class="dropdown">
           <button class="dropbtn">Menu</button>
           <div class="dropdown-content">
-            <%= link "New actor", to: actor_path(@conn, :index) %>
-            <%= link "New movie", to: movie_path(@conn, :index) %>
+            <%= link "Home", to: movie_path(@conn, :index) %>
+            <%= link "Actor", to: actor_path(@conn, :index) %>
+            <%= link "Movie", to: movie_path(@conn, :index) %>
           </div>
         </div>
       </div>
