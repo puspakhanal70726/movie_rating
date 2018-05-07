@@ -1,0 +1,13 @@
+<h2>Show sylvester</h2>
+
+<ul>
+
+  <li>
+    <strong>User:</strong>
+    <%= @sylvester.user_id %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: sylvester_path(@conn, :edit, @sylvester) %></span>
+<span><%= link "Back", to: sylvester_path(@conn, :index) %></span>

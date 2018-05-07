@@ -1,0 +1,6 @@
+<h2>Edit bene</h2>
+
+<%= render "form.html", changeset: @changeset,
+                        action: bene_path(@conn, :update, @bene) %>
+
+<span><%= link "Back", to: bene_path(@conn, :index) %></span>

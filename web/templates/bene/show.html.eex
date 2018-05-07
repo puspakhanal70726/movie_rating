@@ -1,0 +1,13 @@
+<h2>Show bene</h2>
+
+<ul>
+
+  <li>
+    <strong>User:</strong>
+    <%= @bene.user_id %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: bene_path(@conn, :edit, @bene) %></span>
+<span><%= link "Back", to: bene_path(@conn, :index) %></span>

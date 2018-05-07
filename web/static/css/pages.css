@@ -99,3 +99,27 @@ background-repeat: no-repeat;
   width: 380px;
   height: 235px;
 }
+
+.actorimage2{
+  background-image: url("/images/bene.jpg");
+  width: 330px;
+  height: 335px;
+}
+
+.actorimage3{
+  background-image: url("/images/tomhanks.jpg");
+  width: 370px;
+  height: 270px;
+}
+
+.actorimage4{
+  background-image: url("/images/danielradcliffe.jpg");
+  width: 370px;
+  height: 270px;
+}
+
+.actorimage5{
+  background-image: url("/images/syleves.jpg");
+  width: 420px;
+  height: 230px;
+}

@@ -1,0 +1,6 @@
+<h2>Edit tom</h2>
+
+<%= render "form.html", changeset: @changeset,
+                        action: tom_path(@conn, :update, @tom) %>
+
+<span><%= link "Back", to: tom_path(@conn, :index) %></span>

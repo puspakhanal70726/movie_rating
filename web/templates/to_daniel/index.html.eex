@@ -1,0 +1,26 @@
+<h2>Listing daniel</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>User</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for to_daniel <- @daniel do %>
+    <tr>
+      <td><%= to_daniel.user_id %></td>
+
+      <td class="text-right">
+        <span><%= link "Show", to: to_daniel_path(@conn, :show, to_daniel), class: "btn btn-default btn-xs" %></span>
+        <span><%= link "Edit", to: to_daniel_path(@conn, :edit, to_daniel), class: "btn btn-default btn-xs" %></span>
+        <span><%= link "Delete", to: to_daniel_path(@conn, :delete, to_daniel), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %></span>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<span><%= link "New to daniel", to: to_daniel_path(@conn, :new) %></span>

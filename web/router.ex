@@ -24,6 +24,10 @@ defmodule Rumbl.Router do
     resources "/actor", ActorController
     resources "/hugh", HughController
     resources "/henry", HenryController
+    resources "/bene", BeneController
+    resources "/tom", TomController
+    resources "/daniel", ToDanielController
+    resources "/sylvester", SylvesterController
   end
 
   scope "/manage", Rumbl do

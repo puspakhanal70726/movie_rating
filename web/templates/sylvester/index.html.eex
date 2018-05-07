@@ -1,0 +1,26 @@
+<h2>Listing sylvester</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>User</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for sylvester <- @sylvester do %>
+    <tr>
+      <td><%= sylvester.user_id %></td>
+
+      <td class="text-right">
+        <span><%= link "Show", to: sylvester_path(@conn, :show, sylvester), class: "btn btn-default btn-xs" %></span>
+        <span><%= link "Edit", to: sylvester_path(@conn, :edit, sylvester), class: "btn btn-default btn-xs" %></span>
+        <span><%= link "Delete", to: sylvester_path(@conn, :delete, sylvester), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %></span>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<span><%= link "New sylvester", to: sylvester_path(@conn, :new) %></span>

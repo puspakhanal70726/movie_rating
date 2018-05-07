@@ -1,0 +1,26 @@
+<h2>Listing bene</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>User</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for bene <- @bene do %>
+    <tr>
+      <td><%= bene.user_id %></td>
+
+      <td class="text-right">
+        <span><%= link "Show", to: bene_path(@conn, :show, bene), class: "btn btn-default btn-xs" %></span>
+        <span><%= link "Edit", to: bene_path(@conn, :edit, bene), class: "btn btn-default btn-xs" %></span>
+        <span><%= link "Delete", to: bene_path(@conn, :delete, bene), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %></span>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<span><%= link "New bene", to: bene_path(@conn, :new) %></span>

@@ -1,0 +1,6 @@
+<h2>Edit sylvester</h2>
+
+<%= render "form.html", changeset: @changeset,
+                        action: sylvester_path(@conn, :update, @sylvester) %>
+
+<span><%= link "Back", to: sylvester_path(@conn, :index) %></span>
