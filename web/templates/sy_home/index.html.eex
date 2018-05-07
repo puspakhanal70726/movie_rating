@@ -1,0 +1,26 @@
+<h2>Listing home</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>User</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for sy_home <- @home do %>
+    <tr>
+      <td><%= sy_home.user_id %></td>
+
+      <td class="text-right">
+        <span><%= link "Show", to: sy_home_path(@conn, :show, sy_home), class: "btn btn-default btn-xs" %></span>
+        <span><%= link "Edit", to: sy_home_path(@conn, :edit, sy_home), class: "btn btn-default btn-xs" %></span>
+        <span><%= link "Delete", to: sy_home_path(@conn, :delete, sy_home), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %></span>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<span><%= link "New sy home", to: sy_home_path(@conn, :new) %></span>

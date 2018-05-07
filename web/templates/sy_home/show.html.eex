@@ -1,0 +1,13 @@
+<h2>Show sy home</h2>
+
+<ul>
+
+  <li>
+    <strong>User:</strong>
+    <%= @sy_home.user_id %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: sy_home_path(@conn, :edit, @sy_home) %></span>
+<span><%= link "Back", to: sy_home_path(@conn, :index) %></span>

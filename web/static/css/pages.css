@@ -123,3 +123,15 @@ background-repeat: no-repeat;
   width: 420px;
   height: 230px;
 }
+
+
+.ratingfont{
+  margin-left: 450px;
+  position: relative;
+  top: -50px;
+}
+
+
+.footer{
+  margin-left: 100px;
+}

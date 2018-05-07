@@ -31,11 +31,10 @@
           </li>
           <% end %>
         </ol>
-        <p class="text">Welcome to Ratings App</p>
         <div class="dropdown">
           <button class="dropbtn">Menu</button>
           <div class="dropdown-content">
-            <%= link "Home", to: movie_path(@conn, :index) %>
+            <%= link "Home", to: sy_home_path(@conn, :new) %>
             <%= link "Actor", to: actor_path(@conn, :index) %>
             <%= link "Movie", to: movie_path(@conn, :index) %>
           </div>

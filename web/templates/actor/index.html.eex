@@ -1,3 +1,4 @@
+<h1 class="ratingfont">Actor Rating</h1>
 <div class="flex-container">
   <p class="name"><%= link "Hugh", to: hugh_path(@conn, :new) %></p>
 <div class="firstimage"></div>

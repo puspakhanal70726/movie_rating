@@ -1,0 +1,6 @@
+<h2>Edit sy home</h2>
+
+<%= render "form.html", changeset: @changeset,
+                        action: sy_home_path(@conn, :update, @sy_home) %>
+
+<span><%= link "Back", to: sy_home_path(@conn, :index) %></span>
