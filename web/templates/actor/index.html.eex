@@ -12,6 +12,6 @@
   <div class="fourthimage"></div>
   <p class="name"><%= link "Daniel", to: to_daniel_path(@conn, :new) %></p>
   <div class="fifthimage"></div>
-  <p class="name">Sylvester</p>
+  <p class="name"><%= link "Sylvester", to: sylvester_path(@conn, :new) %></p>
   <div class="siximage"></div>
 </div>
