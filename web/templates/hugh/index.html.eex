@@ -1,0 +1,27 @@
+<h2>Listing hugh</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>User</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for hugh <- @hugh do %>
+    <tr>
+      <td><%= hugh.user_id %></td>
+    
+
+      <td class="text-right">
+        <span><%= link "Show", to: hugh_path(@conn, :show, hugh), class: "btn btn-default btn-xs" %></span>
+        <span><%= link "Edit", to: hugh_path(@conn, :edit, hugh), class: "btn btn-default btn-xs" %></span>
+        <span><%= link "Delete", to: hugh_path(@conn, :delete, hugh), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %></span>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<span><%= link "New hugh", to: hugh_path(@conn, :new) %></span>

@@ -22,6 +22,8 @@ defmodule Rumbl.Router do
     resources "/sessions", SessionController, only: [:new, :create, :delete]
     resources "/movie", MovieController
     resources "/actor", ActorController
+    resources "/hugh", HughController
+    resources "/henry", HenryController
   end
 
   scope "/manage", Rumbl do

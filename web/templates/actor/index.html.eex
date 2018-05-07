@@ -1,7 +1,7 @@
 <div class="flex-container">
-  <p class="name">Hugh</p>
+  <p class="name"><%= link "Hugh", to: hugh_path(@conn, :new) %></p>
 <div class="firstimage"></div>
-<p class="name">Henry</p>
+<p class="name"><%= link "Henry", to: henry_path(@conn, :new) %></p>
 <div class="secondimage"></div>
 <p class="name">Benedict</p>
 <div class="thridimage"></div>

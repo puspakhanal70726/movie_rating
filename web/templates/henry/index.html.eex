@@ -1,0 +1,26 @@
+<h2>Listing henry</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>User</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for henry <- @henry do %>
+    <tr>
+      <td><%= henry.user_id %></td>
+
+      <td class="text-right">
+        <span><%= link "Show", to: henry_path(@conn, :show, henry), class: "btn btn-default btn-xs" %></span>
+        <span><%= link "Edit", to: henry_path(@conn, :edit, henry), class: "btn btn-default btn-xs" %></span>
+        <span><%= link "Delete", to: henry_path(@conn, :delete, henry), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %></span>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<span><%= link "New henry", to: henry_path(@conn, :new) %></span>

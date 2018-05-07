@@ -64,3 +64,38 @@ background-repeat: no-repeat;
 .name{
   font-size: 15px;
 }
+
+
+
+
+
+
+
+.actorimage{
+  background-image: url("/images/hughjackman.jpg");
+  width: 380px;
+  height: 235px;
+}
+.actor{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  top: 50px;
+}
+
+.actorfont{
+  text-align: center;
+}
+.span{
+  margin-left: 60px;
+}
+
+.subactor p{
+  font-size: 20px;
+}
+
+.actorimage1{
+  background-image: url("/images/henrycavill.jpg");
+  width: 380px;
+  height: 235px;
+}
