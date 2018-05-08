@@ -16,8 +16,11 @@
       <div class="header">
         <ol class="breadcrumb text-right">
           <%= if @current_user do %>
-          <li>
+          <li class="usersize">
             <%= @current_user.username %>
+          </li>
+          <li>
+            <%= link "Request Movie", to: request_path(@conn, :new) %>
           </li>
           <li>
             <%= link "Log out", to: session_path(@conn, :delete, @current_user), method: "delete" %>

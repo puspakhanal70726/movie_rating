@@ -29,6 +29,7 @@ defmodule Rumbl.Router do
     resources "/daniel", ToDanielController
     resources "/sylvester", SylvesterController
     resources "/home", SyHomeController
+    resources "/request", RequestController
   end
 
   scope "/manage", Rumbl do
