@@ -20,9 +20,6 @@
             <%= @current_user.username %>
           </li>
           <li>
-            <%= link "Request Movie", to: request_path(@conn, :new) %>
-          </li>
-          <li>
             <%= link "Log out", to: session_path(@conn, :delete, @current_user), method: "delete" %>
           </li>
           <% else %>
@@ -40,6 +37,7 @@
             <%= link "Home", to: sy_home_path(@conn, :new) %>
             <%= link "Actor", to: actor_path(@conn, :index) %>
             <%= link "Movie", to: movie_path(@conn, :index) %>
+            <%= link "Request Movie", to: request_path(@conn, :new) %>
           </div>
         </div>
       </div>

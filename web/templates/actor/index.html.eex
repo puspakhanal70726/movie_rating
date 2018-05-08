@@ -16,3 +16,6 @@
   <p class="name"><%= link "Sylvester", to: sylvester_path(@conn, :new) %></p>
   <div class="siximage"></div>
 </div>
+<footer>
+  All Right Reserved
+</footer>
