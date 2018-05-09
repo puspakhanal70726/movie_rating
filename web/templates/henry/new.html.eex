@@ -15,3 +15,17 @@
 
 
 </div>
+
+<fieldset class="rating1">
+  <input type="radio1" name="stars1" id="4_stars1" value="4" >
+      <label class="stars1" for="4_stars1">4 stars</label>
+      <input type="radio1" name="stars1" id="3_stars1" value="3" >
+      <label class="stars1" for="3_stars1">3 stars</label>
+      <input type="radio1" name="stars1" id="2_stars1" value="2" >
+      <label class="stars1" for="2_stars1">2 stars</label>
+      <input type="radio1" name="stars1" id="1_stars1" value="1" >
+      <label class="stars1" for="1_stars1">1 star</label>
+      <input type="radio1" name="stars1" id="0_stars1" value="0" required>
+      <label class="stars1" for="0_stars1">0 star</label>
+      <span  class="label1"></span>
+    </fieldset>

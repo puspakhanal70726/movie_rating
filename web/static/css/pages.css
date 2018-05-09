@@ -135,3 +135,430 @@ background-repeat: no-repeat;
 .footer{
   margin-left: 100px;
 }
+
+
+
+
+
+
+.rating {
+    width: 300px;
+    height: 34px;
+
+    position: relative;
+    top: 100px;
+}
+
+.rating label {
+    text-indent: -100px;
+    width: 40px !important;
+    height: 30px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.label {
+    float: left;
+    padding-top: 3px;
+}
+
+input[type="radio"] {
+    padding-right: 4px;
+    position: absolute;
+    left: 340px;
+    margin-top: 10px;
+}
+
+input[type="radio"], .rating label.stars {
+    float: right;
+    line-height: 30px;
+    height: 30px;
+}
+
+span + input[type=radio] + label, legend + input[type=radio] + label {
+    clear: right;
+    margin-right: 80px;
+    counter-reset: checkbox;
+}
+
+.rating input[type="radio"]:required + label:after {
+    content: '';
+    position: absolute;
+    left: 340px;
+    min-height: 10px;
+    margin-top: -36px;
+    text-align: right;
+    background: #6cbf00;
+    padding: 10px 10px;
+    display: block;
+    width: 50px;
+}
+
+.rating label.stars {
+    background: transparent url('http://www.findsourcecode.com/wp-content/uploads/2014/04/star_off.png') no-repeat center center;
+}
+
+.rating label.stars:hover ~ label.stars,
+.rating label.stars:hover,
+.rating input[type=radio][name=stars]:checked ~ label.stars {
+    background-image: url('http://www.findsourcecode.com/wp-content/uploads/2014/04/star.png');
+    counter-increment: checkbox;
+}
+
+.rating input[type=radio][name=stars]:required + label.stars:after {
+    content: counter(checkbox) " stars!";
+}
+
+
+
+
+
+.rating1 {
+    width: 300px;
+    height: 34px;
+
+    position: relative;
+    top: 100px;
+}
+
+.rating1 label {
+    text-indent: -100px;
+    width: 40px !important;
+    height: 30px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.label1 {
+    float: left;
+    padding-top: 3px;
+}
+
+input[type="radio1"] {
+    padding-right: 4px;
+    position: absolute;
+    left: 340px;
+    margin-top: 10px;
+}
+
+input[type="radio1"], .rating1 label.stars1 {
+    float: right;
+    line-height: 30px;
+    height: 30px;
+}
+
+span + input[type=radio1] + label, legend + input[type=radio1] + label {
+    clear: right;
+    margin-right: 80px;
+    counter-reset: checkbox;
+}
+
+.rating1 input[type="radio1"]:required + label:after {
+    content: '';
+    position: absolute;
+    left: 340px;
+    min-height: 10px;
+    margin-top: -36px;
+    text-align: right;
+    background: #6cbf00;
+    padding: 10px 10px;
+    display: block;
+    width: 50px;
+}
+
+.rating1 label.stars1 {
+    background: transparent url('http://www.findsourcecode.com/wp-content/uploads/2014/04/star_off.png') no-repeat center center;
+}
+
+.rating1 label.stars1:hover ~ label.stars1,
+.rating1 label.stars1:hover,
+.rating1 input[type=radio1][name=stars1]:checked ~ label.stars1 {
+    background-image: url('http://www.findsourcecode.com/wp-content/uploads/2014/04/star.png');
+    counter-increment: checkbox;
+}
+
+.rating1 input[type=radio1][name=stars1]:required + label.stars1:after {
+    content: counter(checkbox) " stars1!";
+}
+
+
+
+.rating2 {
+    width: 300px;
+    height: 34px;
+
+    position: relative;
+    top: 100px;
+}
+
+.rating2 label {
+    text-indent: -100px;
+    width: 40px !important;
+    height: 30px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.label2 {
+    float: left;
+    padding-top: 3px;
+}
+
+input[type="radio2"] {
+    padding-right: 4px;
+    position: absolute;
+    left: 340px;
+    margin-top: 10px;
+}
+
+input[type="radio2"], .rating2 label.stars2 {
+    float: right;
+    line-height: 30px;
+    height: 30px;
+}
+
+span + input[type=radio2] + label, legend + input[type=radio2] + label {
+    clear: right;
+    margin-right: 80px;
+    counter-reset: checkbox;
+}
+
+.rating2 input[type="radio2"]:required + label:after {
+    content: '';
+    position: absolute;
+    left: 340px;
+    min-height: 10px;
+    margin-top: -36px;
+    text-align: right;
+    background: #6cbf00;
+    padding: 10px 10px;
+    display: block;
+    width: 50px;
+}
+
+.rating2 label.stars2 {
+    background: transparent url('http://www.findsourcecode.com/wp-content/uploads/2014/04/star_off.png') no-repeat center center;
+}
+
+.rating2 label.stars2:hover ~ label.stars2,
+.rating2 label.stars2:hover,
+.rating2 input[type=radio2][name=stars2]:checked ~ label.stars2 {
+    background-image: url('http://www.findsourcecode.com/wp-content/uploads/2014/04/star.png');
+    counter-increment: checkbox;
+}
+
+.rating2 input[type=radio2][name=stars2]:required + label.stars2:after {
+    content: counter(checkbox) " stars2!";
+}
+
+
+
+.rating3 {
+    width: 300px;
+    height: 34px;
+
+    position: relative;
+    top: 100px;
+}
+
+.rating3 label {
+    text-indent: -100px;
+    width: 40px !important;
+    height: 30px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.label3 {
+    float: left;
+    padding-top: 3px;
+}
+
+input[type="radio3"] {
+    padding-right: 4px;
+    position: absolute;
+    left: 340px;
+    margin-top: 10px;
+}
+
+input[type="radio3"], .rating3 label.stars3 {
+    float: right;
+    line-height: 30px;
+    height: 30px;
+}
+
+span + input[type=radio3] + label, legend + input[type=radio3] + label {
+    clear: right;
+    margin-right: 80px;
+    counter-reset: checkbox;
+}
+
+.rating3 input[type="radio3"]:required + label:after {
+    content: '';
+    position: absolute;
+    left: 340px;
+    min-height: 10px;
+    margin-top: -36px;
+    text-align: right;
+    background: #6cbf00;
+    padding: 10px 10px;
+    display: block;
+    width: 50px;
+}
+
+.rating3 label.stars3 {
+    background: transparent url('http://www.findsourcecode.com/wp-content/uploads/2014/04/star_off.png') no-repeat center center;
+}
+
+.rating3 label.stars3:hover ~ label.stars3,
+.rating3 label.stars3:hover,
+.rating3 input[type=radio3][name=stars3]:checked ~ label.stars3 {
+    background-image: url('http://www.findsourcecode.com/wp-content/uploads/2014/04/star.png');
+    counter-increment: checkbox;
+}
+
+.rating3 input[type=radio3][name=stars3]:required + label.stars3:after {
+    content: counter(checkbox) " stars3!";
+}
+
+
+
+
+
+
+.rating4 {
+    width: 300px;
+    height: 34px;
+
+    position: relative;
+    top: 100px;
+}
+
+.rating4 label {
+    text-indent: -100px;
+    width: 40px !important;
+    height: 30px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.label4 {
+    float: left;
+    padding-top: 3px;
+}
+
+input[type="radio4"] {
+    padding-right: 4px;
+    position: absolute;
+    left: 340px;
+    margin-top: 10px;
+}
+
+input[type="radio4"], .rating4 label.stars4 {
+    float: right;
+    line-height: 30px;
+    height: 30px;
+}
+
+span + input[type=radio4] + label, legend + input[type=radio4] + label {
+    clear: right;
+    margin-right: 80px;
+    counter-reset: checkbox;
+}
+
+.rating4 input[type="radio4"]:required + label:after {
+    content: '';
+    position: absolute;
+    left: 340px;
+    min-height: 10px;
+    margin-top: -36px;
+    text-align: right;
+    background: #6cbf00;
+    padding: 10px 10px;
+    display: block;
+    width: 50px;
+}
+
+.rating4 label.stars4 {
+    background: transparent url('http://www.findsourcecode.com/wp-content/uploads/2014/04/star_off.png') no-repeat center center;
+}
+
+.rating4 label.stars4:hover ~ label.stars4,
+.rating4 label.stars4:hover,
+.rating4 input[type=radio4][name=stars4]:checked ~ label.stars4 {
+    background-image: url('http://www.findsourcecode.com/wp-content/uploads/2014/04/star.png');
+    counter-increment: checkbox;
+}
+
+.rating4 input[type=radio4][name=stars4]:required + label.stars4:after {
+    content: counter(checkbox) " stars4!";
+}
+
+
+.rating5 {
+    width: 300px;
+    height: 34px;
+
+    position: relative;
+    top: 100px;
+}
+
+.rating5 label {
+    text-indent: -100px;
+    width: 40px !important;
+    height: 30px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.label5 {
+    float: left;
+    padding-top: 3px;
+}
+
+input[type="radio5"] {
+    padding-right: 4px;
+    position: absolute;
+    left: 340px;
+    margin-top: 10px;
+}
+
+input[type="radio5"], .rating5 label.stars5 {
+    float: right;
+    line-height: 30px;
+    height: 30px;
+}
+
+span + input[type=radio5] + label, legend + input[type=radio5] + label {
+    clear: right;
+    margin-right: 80px;
+    counter-reset: checkbox;
+}
+
+.rating5 input[type="radio5"]:required + label:after {
+    content: '';
+    position: absolute;
+    left: 340px;
+    min-height: 10px;
+    margin-top: -36px;
+    text-align: right;
+    background: #6cbf00;
+    padding: 10px 10px;
+    display: block;
+    width: 50px;
+}
+
+.rating5 label.stars5 {
+    background: transparent url('http://www.findsourcecode.com/wp-content/uploads/2014/04/star_off.png') no-repeat center center;
+}
+
+.rating5 label.stars5:hover ~ label.stars5,
+.rating5 label.stars5:hover,
+.rating5 input[type=radio5][name=stars5]:checked ~ label.stars5 {
+    background-image: url('http://www.findsourcecode.com/wp-content/uploads/2014/04/star.png');
+    counter-increment: checkbox;
+}
+
+.rating5 input[type=radio5][name=stars5]:required + label.stars5:after {
+    content: counter(checkbox) " stars3!";
+}
