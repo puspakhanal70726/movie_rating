@@ -12,6 +12,7 @@
   </head>
 
   <body>
+    <div class="background">
     <div class="container">
       <div class="header">
         <ol class="breadcrumb text-right">
@@ -50,7 +51,7 @@
         </main>
       </div>
     </div>
-
+  </div>
 
     <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
   </body>

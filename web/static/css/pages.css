@@ -1,29 +1,25 @@
-.mycontent{
-  background-position: top;
-  background-repeat: no-repeat;
-  height: 600px;
-  width: 400px;
-}
+
 .mycontent{
   background-image: url("/images/hero3.jpg");
   background-position: top;
   background-repeat: no-repeat;
+  width: 1010px;
+  height: 570px;
 
-  width: 1000px;
-  height: 900px;
 
 }
 
 .flex-container {
   display: flex;
-
+margin-left: 100px;
 
 
 }
 
 .flex-container > div {
   margin: 25px;
-  padding: 160px;
+  padding: 100px;
+
 
 }
 .secondimage{
@@ -561,4 +557,20 @@ span + input[type=radio5] + label, legend + input[type=radio5] + label {
 
 .rating5 input[type=radio5][name=stars5]:required + label.stars5:after {
     content: counter(checkbox) " stars3!";
+}
+
+
+
+
+.background{
+  background-image: url("/images/hero.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  width: 1440px;
+  height: 805px;
+
+}
+
+.paragraph{
+  color: white;
 }
